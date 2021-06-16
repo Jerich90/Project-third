@@ -5,6 +5,6 @@
 .benefits-section::before {
     content: url("../img/pictures/Vector_red.png");
     position: absolute;
-    bottom: -19px;
+    bottom: rem(-19px);
     left: 24%;
 }

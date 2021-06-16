@@ -1,19 +1,32 @@
 .benefits {
     display: flex;
+    @include phones {
+        flex-direction: column;
+    }
 }
 
 .benefits__item {
     flex: 1;
     padding: 0 3%;
     position: relative;
+    @include phones {
+        padding: 0;
+        margin-bottom: rem(35px);
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
 }
 
 .benefits__item::before {
     content: url("../img/pictures/Combined_shape.png");
     position: absolute;
-    top: 50px;
+    top: rem(50px);
     right: 0;
     transform: translateX(50%);
+    @include phones {
+        display: none;
+    }
 }
 
 .benefits__item:first-child {

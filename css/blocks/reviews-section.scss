@@ -3,7 +3,7 @@
     &::before {
         content: url("../img/pictures/Ellipse_grey.png");
         position: absolute;
-        bottom: -19px;
+        bottom: rem(-19px);
         left: 24%;
     }
 }

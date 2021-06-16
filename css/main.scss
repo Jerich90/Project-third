@@ -1,5 +1,10 @@
 //z-index
 $z-fixed-menu: 100;
+//breakpoints
+$tablets: 768px;
+$phones: 480px;
+//media
+@import "./blocks/media.scss";
 //normalize
 @import "./normalize.scss";
 //setup
@@ -21,3 +26,7 @@ $z-fixed-menu: 100;
 @import "./blocks/form.scss";
 @import "./blocks/radio.scss";
 @import "./blocks/fixed-menu.scss";
+@import "./blocks/hamburger.scss";
+@import "./blocks/footer.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/social.scss";
