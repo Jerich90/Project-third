@@ -30,6 +30,7 @@
 .reviews__avatar {
     width: rem(253px);
     height: rem(264px);
+    margin-right: rem(40px);
     @include tablets {
         width: rem(130px);
         height: rem(130px);
@@ -45,7 +46,6 @@
 
 .reviews__content {
     flex: 1;
-    margin-left: rem(40px);
 }
 
 .reviews__title {
