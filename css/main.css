@@ -1594,6 +1594,7 @@ img {
 }
 
 .overlay {
+  position: relative;
   height: 100%;
   width: 100%;
   background-color: #313131;
@@ -1647,4 +1648,14 @@ img {
 .overlay--active {
   left: 0;
   opacity: 1;
+}
+
+.overlay__close-icon {
+  position: absolute;
+  cursor: pointer;
+  top: 3%;
+  right: 3%;
+  width: 20px;
+  height: 20px;
+  z-index: 10;
 }
