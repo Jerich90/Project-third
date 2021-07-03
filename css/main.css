@@ -884,6 +884,27 @@ img {
   }
 }
 
+.reviews__list {
+  position: relative;
+  min-height: 280px;
+}
+
+.reviews__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  opacity: 0;
+}
+
+.reviews__item.active {
+  position: static;
+  opacity: 1;
+}
+
 .reviews__avatar {
   width: 15.8125rem;
   height: 16.5rem;
@@ -945,6 +966,9 @@ img {
   border-radius: 50%;
   overflow: hidden;
   position: relative;
+}
+.interactive-avatar:hover {
+  border: 0.375rem solid #E01F3D;
 }
 
 .interactive-avatar--active {
@@ -1077,6 +1101,10 @@ img {
   .form__input {
     height: 2.25rem;
   }
+}
+
+.form__input.input-error {
+  border-color: #E01F3D;
 }
 
 @media screen and (max-width: 768px) {
@@ -1218,8 +1246,8 @@ img {
   position: fixed;
   top: 3%;
   right: 3%;
-  width: 25px;
-  height: 24px;
+  width: 1.5625rem;
+  height: 1.5rem;
   cursor: pointer;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
@@ -1362,6 +1390,17 @@ img {
   background-color: #F8FAF9;
 }
 
+.assortment__slider {
+  position: relative;
+}
+.assortment__slider .bx-wrapper {
+  border: 0;
+  background: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  margin-bottom: 0;
+}
+
 .assortment__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1387,12 +1426,14 @@ img {
       flex-shrink: 0;
   width: 28.25rem;
   height: 28.25rem;
+  margin-right: 3.75rem;
 }
 @media screen and (max-width: 768px) {
   .assortment__photo {
     margin-bottom: 2.5rem;
     width: 19.125rem;
     height: 19.125rem;
+    margin-right: 0;
   }
 }
 
@@ -1405,6 +1446,9 @@ img {
 
 .assortment__content {
   width: 40%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 @media screen and (max-width: 768px) {
   .assortment__content {
@@ -1655,7 +1699,136 @@ img {
   cursor: pointer;
   top: 3%;
   right: 3%;
-  width: 20px;
-  height: 20px;
+  width: 1.25rem;
+  height: 1.25rem;
   z-index: 10;
+}
+
+.team {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  .team {
+    display: none;
+  }
+}
+.team.team--version--mobile {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .team.team--version--mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.team__item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+  margin-right: 20px;
+  max-width: 13.75rem;
+  position: relative;
+}
+.team__item:last-child {
+  margin-right: 0;
+}
+
+.team--version--mobile .team__item {
+  margin-bottom: 1rem;
+  margin-right: 0;
+}
+
+.team__avatar {
+  height: 18.125rem;
+  margin-bottom: 1.5625rem;
+}
+
+.team__title {
+  color: #292929;
+  font-size: 1.125rem;
+  font-weight: bold;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 0;
+  border-radius: 0;
+  background: 0;
+  cursor: pointer;
+  margin-bottom: 0.6875rem;
+}
+
+.team--version--desctop .team__content {
+  position: absolute;
+  top: 100%;
+}
+
+.team__content {
+  overflow: hidden;
+  -webkit-transition: height 0.3s;
+  transition: height 0.3s;
+  height: 0;
+}
+
+.team__position {
+  font-size: 16px;
+  font-weight: bold;
+  color: #292929;
+  margin-bottom: 0.25rem;
+}
+
+.modal {
+  display: none;
+}
+.modal.error-modal .modal__content {
+  color: red;
+}
+.modal.fancybox-content {
+  padding: 0 !important;
+}
+.modal .fancebox-button {
+  display: none;
+}
+
+.modal__container {
+  min-width: 19.375rem;
+  height: 11.25rem;
+  margin: auto;
+  border-radius: 5px;
+  background: #fff;
+  padding: 2.1875rem 3.3125rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.modal__content {
+  font-size: 1.125rem;
+  margin-bottom: 2.4375rem;
+  color: black;
 }
