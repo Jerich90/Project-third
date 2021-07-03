@@ -27,6 +27,26 @@
     }
 }
 
+.reviews__list {
+    position: relative;
+    min-height: 280px;
+}
+
+.reviews__item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: .3s;
+    opacity: 0;
+}
+
+.reviews__item.active {
+    position: static;
+    opacity: 1;
+}
+
 .reviews__avatar {
     width: rem(253px);
     height: rem(264px);
