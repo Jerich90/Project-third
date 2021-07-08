@@ -695,7 +695,7 @@ img {
           justify-content: center;
 }
 .section-order {
-  background: url("../img/pictures/order-bacground.png") center center no-repeat;
+  background: url("../img/pictures/order-bacground.png") center center/cover no-repeat;
 }
 .section--font-color--white {
   color: #fff;
