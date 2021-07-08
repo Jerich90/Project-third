@@ -6,7 +6,7 @@
     flex-direction: column;
     justify-content: center;
     &-order {
-        background: url("../img/pictures/order-bacground.png") center center no-repeat;
+        background: url("../img/pictures/order-bacground.png") center center/cover no-repeat;
     }
     &--font-color--white {
         color: #fff;
