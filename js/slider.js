@@ -2,7 +2,8 @@ let hamburger = document.querySelector('.hamburger');
 let overlay = document.querySelector('.overlay');
 let body = document.querySelector('body');
 
-let links = document.querySelectorAll('.menu__link, .overlay__close-icon');
+let links = document.querySelectorAll('.overlay__close-icon');
+// let links = document.querySelectorAll('.menu__link, .overlay__close-icon');
 
 links.forEach(function(element) {
     element.addEventListener('click', toggleMenu);
@@ -18,4 +19,5 @@ function toggleMenu() {
 hamburger.addEventListener('click', toggleMenu => {
     toggleMenu.preventDefault();
     overlay.classList.toggle('overlay--active');
+    blockScroll();
 });
