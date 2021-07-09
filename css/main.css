@@ -1423,6 +1423,9 @@ img {
           box-shadow: none;
   margin-bottom: 0;
 }
+.assortment__slider .bx-wrapper .bx-viewport {
+  overflow: visible !important;
+}
 
 .assortment__item {
   display: -webkit-box;
