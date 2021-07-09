@@ -6,6 +6,13 @@ html {
     @include phones {
         font-size: 14px;
     }
+    &.locked {
+        overflow: hidden;
+        width: calc(100%-17px);
+        @include tablets {
+            width: 100%;
+        }
+    }
 }
 
 html,
