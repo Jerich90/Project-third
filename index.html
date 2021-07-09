@@ -29,7 +29,7 @@
                                 <li class="menu__item"><a href="#" data-scroll-to="team" class="menu__link">Команда</a></li>
                                 <li class="menu__item"><a href="#" data-scroll-to="color" class="menu__link">Цвета</a></li>
                                 <li class="menu__item"><a href="#" data-scroll-to="reviews" class="menu__link">Отзывы</a></li>
-                                <li class="menu__item"><a href="#" data-scroll-to="" class="menu__link">Как мы работаем</a></li>
+                                <li class="menu__item"><a href="#" data-scroll-to="video" class="menu__link">Как мы работаем</a></li>
                                 <li class="menu__item"><a href="#" data-scroll-to="map" class="menu__link">Контакты</a></li>
                             </ul>
                         </nav>
@@ -552,6 +552,37 @@
                     </div>
                 </div>
             </section>
+            <section data-section-id="video" class="section player-section">
+                <div class="container video__container">
+                    <h2 class="section__title">Как мы работаем</h2>
+                    <div class="video__wrapper">
+                        <div class="video__player">
+                            <video src="./src/Когда слегка ОБДОЛБАЛСЯ на работе - Bored на Русском.mp4" id="player" class="video__window" poster="./img/pictures/solash_screen.png"></video>
+                            <button class="video__player-img">
+                                <img src="./img/icons/player/play.svg" alt="play" class="video__btn-img play">
+                            </button>
+                        </div>
+                        <div class="video__toolbar">
+                            <div class="duration video__toolbar-duration">
+                                <div class="duration__btn-wrap">
+                                    <button class="duration__img play"></button>
+                                </div>
+                                <div class="duration__length-wrap">
+                                    <input type="range" class="duration__length duration__length " id="durationLevel">
+                                </div>
+                            </div>
+                            <div class="sound">
+                                <button class="sound__btn" id="mic">
+                                    <img src="./img/icons/player/sound.svg" alt="sound" class="sound__mic">
+                                </button>
+                                <div class="sound__volume">
+                                    <input type="range" class="duration__length sound__length" id="micLevel">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <section data-section-id="order" class="section section-order section--font-color--white">
                 <div class="container">
                     <h2 class="section__title">Закажите доставку</h2>
@@ -629,9 +660,7 @@
             </section>
             <section data-section-id="map" class="section map-section">
                 <div class="container">
-                    <div class="map">
-                        <img src="./img/pictures/map.png" class="map__img" alt="">
-                    </div>
+                    <div id="map"></div>
                     <footer class="footer">
                         <div class="container footer__container">
                             <adress class="contacts">
@@ -685,6 +714,9 @@
                 <a href="" data-scroll-to="reviews" class="fixed-menu__link"></a>
             </li>
             <li class="fixed-menu__item">
+                <a href="" data-scroll-to="video" class="fixed-menu__link"></a>
+            </li>
+            <li class="fixed-menu__item">
                 <a href="" data-scroll-to="order" class="fixed-menu__link"></a>
             </li>
             <li class="fixed-menu__item">
@@ -729,6 +761,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.5/mobile-detect.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
     <script src="./js/modal.js"></script>
     <script src="./js/tabs.js"></script>
     <script src="./js/slider.js"></script>
@@ -736,6 +769,9 @@
     <script src="./js/assort_slider.js"></script>
     <script src="./js/menu-color.js"></script>
     <script src="./js/ops.js"></script>
+    <script src="./js/video.js"></script>
+    <script src="./js/map.js"></script>
+    <script src="./js/blockscroll.js"></script>
 </body>
 
 </html>
