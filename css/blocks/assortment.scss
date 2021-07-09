@@ -9,6 +9,9 @@
         background: transparent;
         box-shadow: none;
         margin-bottom: 0;
+        .bx-viewport {
+            overflow: visible !important;
+        }
     }
 }
 
