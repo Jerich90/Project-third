@@ -48,6 +48,12 @@
     padding: 38px 40px 53px;
 }
 
+.color-menu__text {
+    writing-mode: vertical-lr;
+    transform: rotate(-180deg);
+    margin-bottom: rem(34px);
+}
+
 .color-menu__close {
     cursor: pointer;
     position: absolute;
