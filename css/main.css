@@ -1409,6 +1409,11 @@ img {
   height: 100%;
 }
 
+.map-section .container {
+  width: 100%;
+  height: 100%;
+}
+
 .assortment-section {
   background-color: #F8FAF9;
 }
@@ -1422,9 +1427,6 @@ img {
   -webkit-box-shadow: none;
           box-shadow: none;
   margin-bottom: 0;
-}
-.assortment__slider .bx-wrapper .bx-viewport {
-  overflow: visible !important;
 }
 
 .assortment__item {
